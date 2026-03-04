@@ -1,0 +1,77 @@
+{
+  "update_time": "2026-03-03 15:23",
+  "date": "2026-03-03",
+  "total": 10,
+  "news": [
+    {
+      "title": "OpenAI获1100亿美元巨额投资，估值达7300亿美元",
+      "summary": "OpenAI宣布获得1100亿美元新投资，估值7300亿美元，软银、英伟达、亚马逊为主要投资者。",
+      "category": "🔥头条",
+      "score": 10,
+      "link": "https://openai.com/index/scaling-ai-for-everyone"
+    },
+    {
+      "title": "OpenAI与美国国防部签订合作协议",
+      "summary": "OpenAI公布与国防部合作协议细节，涉及安全红线、法律保护及AI系统在机密环境部署。",
+      "category": "🔥头条",
+      "score": 9,
+      "link": "https://openai.com/index/our-agreement-with-the-department-of-war"
+    },
+    {
+      "title": "Cursor年化收入突破20亿美元",
+      "summary": "AI编程工具Cursor年化收入超20亿美元，过去三个月收入翻倍。",
+      "category": "🛠️工具",
+      "score": 8,
+      "link": "https://techcrunch.com/2026/03/02/cursor-has-reportedly-surpassed-2b-in-annualized-revenue/"
+    },
+    {
+      "title": "OpenAI与亚马逊达成战略合作",
+      "summary": "OpenAI与亚马逊宣布战略合作，将Frontier平台引入AWS，扩展AI基础设施和企业AI代理。",
+      "category": "📰行业",
+      "score": 8,
+      "link": "https://openai.com/index/amazon-partnership"
+    },
+    {
+      "title": "Anthropic面临工业级模型蒸馏攻击",
+      "summary": "Anthropic披露海外实验室对Claude进行工业级模型蒸馏，生成超1600万次查询。",
+      "category": "📰行业",
+      "score": 7,
+      "link": "https://www.artificialintelligence-news.com/news/anthropic-claude-faces-industrial-scale-ai-model-distillation/"
+    },
+    {
+      "title": "ChatGPT因国防部合作卸载量激增295%",
+      "summary": "ChatGPT应用卸载量因国防部合作消息激增295%，Claude下载量增长。",
+      "category": "📰行业",
+      "score": 7,
+      "link": "https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/"
+    },
+    {
+      "title": "OpenAI与Figma推出代码设计集成",
+      "summary": "OpenAI与Figma推出Codex集成，连接代码与设计，加速团队迭代与发布。",
+      "category": "🛠️工具",
+      "score": 7,
+      "link": "https://openai.com/index/figma-partnership"
+    },
+    {
+      "title": "ASML高数值孔径EUV工具量产就绪",
+      "summary": "ASML高数值孔径EUV工具宣布量产就绪，为下一代AI芯片铺平道路。",
+      "category": "📰行业",
+      "score": 7,
+      "link": "https://www.artificialintelligence-news.com/news/asml-high-na-euv-production-ready-ai-chips/"
+    },
+    {
+      "title": "Claude遭遇大规模服务中断",
+      "summary": "Anthropic的AI聊天机器人Claude遭遇大规模服务中断，数千用户报告访问问题。",
+      "category": "📰行业",
+      "score": 6,
+      "link": "https://techcrunch.com/2026/03/02/anthropics-claude-reports-widespread-outage/"
+    },
+    {
+      "title": "黑客利用ChatGPT入侵55国600个防火墙",
+      "summary": "黑客利用ChatGPT入侵55个国家600个防火墙，亚马逊威胁情报团队发布详细案例研究。",
+      "category": "📰行业",
+      "score": 6,
+      "link": "https://dev.to/mothasa/one-hacker-used-chatgpt-to-break-into-600-firewalls-across-55-countries-he-wasnt-even-good-34gl"
+    }
+  ]
+}

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 feedparser
 openai
+=======
+feedparser
+openai
+>>>>>>> 26174d9a8be5a7448b6af247006c1f895ac549ff
 python-dotenv
