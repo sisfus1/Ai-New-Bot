@@ -1,4 +1,4 @@
-# 🚀 Auto-Media-Agent (AMA)
+# Auto-Media-Agent (AMA)
 **企业级全自动 AI 媒体矩阵系统 (An Enterprise-Grade Autonomous Multi-Modal Rendering Engine)**
 
 这是一个基于 Agent 的全自动 AI 媒体内容生产系统。它能够自动抓取实时新闻、进行 AI 深度推演、生成多模态文案，并最终压制合成高清短视频进行全平台分发。
@@ -11,7 +11,7 @@
 
 ---
 
-### 🎬 Demo: 系统运行实况 (Platform Demonstration)
+### Demo: 系统运行实况 (Platform Demonstration)
 <div align="center">
   <img src="./demo.gif" alt="Auto-Media-Agent Demo" width="850"/>
   <p><em>🔺 视频生成全流程：公网抓取 -> 动态检索 -> 极客控制台终端反馈 -> 多模态视频合成呈现</em></p>
@@ -19,12 +19,12 @@
 
 ---
 
-## 📖 项目愿景 (Project Vision)
+##  项目愿景 (Project Vision)
 Auto-Media-Agent (AMA) 突破了传统 AIGC 工具需要频繁人工介入的限制，构建了一条从**全网情报实时抓取 -> 动态 RAG 记忆检索 -> LLM 深度创作 -> TTS 音频合成 -> FLUX 视觉生成 -> Whisper 像素级音画字同步 -> 终极视频压制**的全自动 DAG (有向无环图) 工业流水线。
 
 系统采用前后端分离架构，底座依托 Redis + Celery 实现异步高并发调度，专为多模态计算密集型任务打造。
 
-## 🏗 系统架构 (System Architecture)
+##  系统架构 (System Architecture)
 
 ### 1. 业务流程图 (Business Flow)
 ```mermaid
@@ -125,23 +125,23 @@ flowchart TD
     Orchestrator -->|Render Video and Subtitles| FFmpeg
 ```
 
-## ✨ 核心特性与工程突破 (Core Engineering Breakthroughs)
+##  核心特性与工程突破 (Core Engineering Breakthroughs)
 
 本系统不仅是各种 API 的简单堆砌，而是深入解决了一系列多模态视频工程与底层并发领域的“深水区”难题：
 
-### 1. 🎞️ 像素级音画字精准同步 (Pixel-Level Subtitle Injection)
+### 1.像素级音画字精准同步 (Pixel-Level Subtitle Injection)
 * **痛点**：传统视频渲染库（如 MoviePy）在 Windows 环境下处理带透明通道（Alpha Mask）的复杂字幕图层时，极易出现底层 C 语言级的遮罩丢失 Bug。
 * **架构解法**：彻底重构渲染逻辑，引入 `faster-whisper` 进行毫秒级音频切片（Audio Slicing）。废弃传统的“图层叠加”方案，自主研发基于 Pillow 和 `fl_image` 的**帧级像素重绘引擎 (Frame-Level Rendering)**，直接在视频基底的每一帧 RGB 像素矩阵上硬编码字幕，实现了 100% 绝对可靠的音画字对齐。
 
-### 2. ⚡ 分布式高并发死锁免疫 (Concurrency Deadlock Resolution)
+### 2.分布式高并发死锁免疫 (Concurrency Deadlock Resolution)
 * **痛点**：在多模态流水线中引入 LangChain 等现代异步框架（Asyncio）时，极易与 Celery 常用的传统协程池（如 Gevent/Eventlet）在底层网络套接字上发生争用，导致灾难性的并发死锁（Deadlock）。
 * **架构解法**：实施严格的“异步隔离策略”。在任务节点中启用 Python 原生多线程池（Threads Pool `-P threads`），并利用独立事件循环挂载大模型的异步链调用（`ainvoke`）。使得系统能够无阻塞地同时处理多个视频渲染订单。
 
-### 3. 🧠 具备时间钢印的动态 RAG 记忆流 (Time-Aware Dynamic RAG)
+### 3.具备时间钢印的动态 RAG 记忆流 (Time-Aware Dynamic RAG)
 * **痛点**：传统静态知识库无法应对新闻类应用极高的“时效性”需求。
 * **架构解法**：集成 DuckDuckGo 实时引擎。在生成任务启动时，向 Agent 注入当前真实世界的“时间钢印”。搜集到的情报不仅用于当前分析，还会被向量化存入 ChromaDB，为系统提供长期的历史上下文支撑。
 
-## 🛠️ 技术栈矩阵 (Tech Stack)
+## 技术栈矩阵 (Tech Stack)
 
 | 领域 (Domain) | 核心技术 (Technologies) |
 | :--- | :--- |
@@ -151,7 +151,7 @@ flowchart TD
 | **Backend & Queue** | FastAPI (ASGI), Celery (Distributed Task Queue) |
 | **Frontend UI** | Vue3, TailwindCSS, Canvas Particle Physics Engine |
 
-## ⚙️ 系统标准作业流程 (SOP Workflow)
+## 系统标准作业流程 (SOP Workflow)
 1. `Data Mining`: 接收指令，连接公网搜索引擎获取最新资讯。
 2. `Memory Retrieval`: 在 ChromaDB 中进行语义检索，提取历史关联记忆。
 3. `LLM Reasoning`: 融合实时数据与历史记忆，生成带有情绪色彩的脚本和视觉分镜提示词。
@@ -159,7 +159,7 @@ flowchart TD
 5. `Timeline Alignment`: 唤醒 Whisper 听写引擎，生成带有精准时间戳的字幕轨。
 6. `Video Composition`: 启动视频压制引擎，进行像素级合并与输出，并通过长轮询推送至前端控制台。
 
-## 🚀 快速启动 (Quick Start)
+## 快速启动 (Quick Start)
 
 **1. 克隆仓库**
 ```bash
@@ -180,7 +180,7 @@ pip install -r requirements.txt
 双击运行根目录的 run.bat 
 ```
 
-## 🗺️ 架构演进路线 (Architecture Roadmap)
+## 架构演进路线 (Architecture Roadmap)
 本项目目前已实现了 DAG (有向无环图) 式的全自动流水线。未来的核心技术探索将致力于将其升级为高度自治的生态系统：
 
 - [ ] **Multi-Agent 升维重构 (LangGraph)**：计划摒弃单体线性调用，全面引入 LangGraph 框架。将系统拆解解耦为 `Data Miner (数据特工)`、`Chief Editor (主编节点)`、`Art Director (视觉指导)` 与 `QA Inspector (质量检测)` 四大独立智能体，构建具备状态机与自我反思（Reflection）能力的循环图网络。
