@@ -188,3 +188,8 @@ pip install -r requirements.txt
 - [ ] **Multi-Agent 升维重构 (LangGraph)**：计划摒弃单体线性调用，全面引入 LangGraph 框架。将系统拆解解耦为 `Data Miner (数据特工)`、`Chief Editor (主编节点)`、`Art Director (视觉指导)` 与 `QA Inspector (质量检测)` 四大独立智能体，构建具备状态机与自我反思（Reflection）能力的循环图网络。
 - [ ] **A2A 协议交互机制 (Agent-to-Agent)**：实装多智能体间的标准通信握手协议，确立各个节点间的数据流转与“审查-打回-重写”的闭环容错机制，大幅降低幻觉与渲染废片率。
 - [ ] **算力节点云端解耦 (Serverless Computing)**：针对极度消耗 CPU 算力的 `MoviePy` 视频压制与 `Whisper` 语音切片模块，计划将其从主业务逻辑中物理剥离。未来将探索利用 Docker 容器化技术，结合云端 Serverless 弹性节点进行部署，实现按需扩缩容的工业级高可用方案。
+
+
+<div align="center">
+  <img src="./demo.gif" alt="Auto-Media-Agent Demo" width="800"/>
+</div>
