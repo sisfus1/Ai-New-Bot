@@ -111,18 +111,18 @@ flowchart TD
         FFmpeg[MoviePy / Whisper]:::service
     end
 
-    %% 连线
-    User <-->|REST API / Polling| API
+    %% 连线 (已移除所有易导致解析崩溃的特殊符号)
+    User <-->|REST API| API
     API -->|Push Task| Redis
     Redis -->|Pop Task| Celery
     
-    Celery -->|Execute (Threads)| Orchestrator
+    Celery -->|Execute Threads| Orchestrator
     Orchestrator <-->|Context| RAG
     RAG <-->|Similarity Search| Chroma
     
     Orchestrator -->|Reasoning| LLM
     Orchestrator -->|Generate Image| SD
-    Orchestrator -->|Render Video & Subtitles| FFmpeg
+    Orchestrator -->|Render Video and Subtitles| FFmpeg
 ```
 
 ## ✨ 核心特性与工程突破 (Core Engineering Breakthroughs)
